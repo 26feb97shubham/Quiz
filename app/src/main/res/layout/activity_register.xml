@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/quiz_app_logo"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="12dp"
+                    android:layout_margin="12dp"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/transparent_border"
+                    android:hint="Name"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:layout_margin="12dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/emailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/transparent_border"
+                    android:hint="Email"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:layout_margin="12dp"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/transparent_border"
+                    android:hint="Password"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:layout_margin="12dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:id="@+id/student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="center"/>
+                    <RadioButton
+                        android:id="@+id/teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher"
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center"/>
+                </RadioGroup>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="12dp"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="12dp"
+                    android:layout_margin="12dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/dark_pink"
+                    android:layout_margin="12dp"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</layout>
